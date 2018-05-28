@@ -6,6 +6,19 @@ import ReactDOM from 'react-dom';
 class AnalogDisplay extends React.Component{
 	clock(){
 	let date = new Date(this.props.time);
+	
+	let dote = {
+		position:'relative',
+		top: 78,
+		left: 92,
+		height: 20,
+		width: 20,
+		backgroundColor: 'blue',
+		borderRadius: '50%',
+		display: 'inline-block'
+
+	}
+
 	let dialStyle = {
 		position: 'relative',
 		top: 0,
@@ -57,6 +70,7 @@ class AnalogDisplay extends React.Component{
 				<div style={secondHandStyle}/>
 				<div style={minuteHandStyle}/>
 				<div style={hourHandStyle}/>
+				<div style={dote}/>
 			</div>
 		)
 }	
